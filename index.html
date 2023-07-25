@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/389577046f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="con">  
+        <form id="blc" action="" method="post">
+          <h3>Blog Here</h3>
+          <h4>Plese fill the content in the given below block</h4>
+          <fieldset>
+            <input placeholder="Name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Heading" type="text" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="tags" type="text" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Content" tabindex="4" 
+            type="text" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button  type="submit" id="contact-submit">Submit</button>
+            <button type="submit" id="contact-submit" onclick="dlog()">Cancel</button>
+          </fieldset>
+        </form>
+    </div>
+
+
+
+    <div class="navbar">
+      <div class="logo">
+        <h1>SS</h1>
+      </div>
+      <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Reading List</a>
+        <a href="#">Podcast</a>
+        <a href="#">FAQs</a>
+      </div>
+      <form class="search">
+        <input type="search" placeholder="Search..." />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <div class="log">
+        <button class="bb">Log in</button>
+        <span>/</span>
+        <button class="bb">Create Account</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="lside">
+        <div class="card">
+          <div class="content" onclick="back()">
+            <div class="front">
+              <h3>SS is a community of 1,106,019 amazing developers.</h3>
+              <p>
+                We're a place where coders share, stay up-to-date and grow their
+                careers.
+              </p>
+            </div>
+            <div class="back">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptates alias doloremque praesentium sed consequuntur saepe
+                dignissimos, repellat accusantium modi voluptas hic mollitia
+                sunt necessitatibus enim porro, dolorum ea dolores maiores
+                eveniet commodi corrupti temporibus. Numquam doloribus, quia
+                laudantium distinctio reprehenderit quidem quo eius possimus
+                quis eum dicta omnis quaerat quas.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti amet atque, eveniet voluptatibus cupiditate temporibus
+                ut voluptatum praesentium placeat esse, culpa sint nulla
+                repellendus reprehenderit omnis, aliquam delectus itaque. Omnis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div class="main">
+        <div class="top">
+          <button class="inbtn">Relevent</button>
+          <button class="inbtn">Top</button>
+          <button class="inbtn">Latest</button>
+          <button class="add" onclick="log()" >+</button>
+          
+        </div>
+        <div class="blog">
+          <div class="blogblock">
+            <div class="bup">
+              <div class="img">
+                <img src="images/photo-1506794778202-cad84cf45f1d.avif" />
+              </div>
+              <div class="bname">
+                <h4>David Johnson</h4>
+                <p>Jun 20</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <div class="dropdown-content">
+                <li class="del">Delete</li>
+                <li class="ed">Edit</li>
+                <li class="rep">Report</li>
+              </div>
+            </div>
+            <div class="bcontent">
+              <h2>Hi There</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In eos
+                a officiis voluptate omnis aliquam consequuntur ab tenetur
+                aspernatur unde!
+              </p>
+            </div>
+            <div class="btags">
+              <a href="#">#blog</a>
+              <a href="#">#ss</a>
+              <a href="#">#new</a>
+            </div>
+            <div class="breaction">
+              <button class="btn">Like</button>
+              <button class="btn">Comment</button>
+              <input class="bsave" type="checkbox" />
+            </div>
+          </div>
+          <div class="blogblock">
+            <div class="bup">
+              <div class="img">
+                <img src="images/photo-1506794778202-cad84cf45f1d.avif" />
+              </div>
+              <div class="bname">
+                <h4>David Johnson</h4>
+                <p>Jun 20</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <div class="dropdown-content">
+                <li class="del">Delete</li>
+                <li class="ed">Edit</li>
+                <li class="rep">Report</li>
+              </div>
+            </div>
+            <div class="bcontent">
+              <h2>Hi There</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In eos
+                a officiis voluptate omnis aliquam consequuntur ab tenetur
+                aspernatur unde!
+              </p>
+            </div>
+            <div class="btags">
+              <a href="#">#blog</a>
+              <a href="#">#ss</a>
+              <a href="#">#new</a>
+            </div>
+            <div class="breaction">
+              <button class="btn">Like</button>
+              <button class="btn">Comment</button>
+              <input class="bsave" type="checkbox" />
+            </div>
+          </div>
+          <div class="blogblock">
+            <div class="bup">
+              <div class="img">
+                <img src="images/photo-1506794778202-cad84cf45f1d.avif" />
+              </div>
+              <div class="bname">
+                <h4>David Johnson</h4>
+                <p>Jun 20</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <div class="dropdown-content">
+                <li class="del">Delete</li>
+                <li class="ed">Edit</li>
+                <li class="rep">Report</li>
+              </div>
+            </div>
+            <div class="bcontent">
+              <h2>Hi There</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In eos
+                a officiis voluptate omnis aliquam consequuntur ab tenetur
+                aspernatur unde!
+              </p>
+            </div>
+            <div class="btags">
+              <a href="#">#blog</a>
+              <a href="#">#ss</a>
+              <a href="#">#new</a>
+            </div>
+            <div class="breaction">
+              <button class="btn">Like</button>
+              <button class="btn">Comment</button>
+              <input class="bsave" type="checkbox" />
+            </div>
+          </div>
+          <div class="blogblock">
+            <div class="bup">
+              <div class="img">
+                <img src="images/photo-1506794778202-cad84cf45f1d.avif" />
+              </div>
+              <div class="bname">
+                <h4>David Johnson</h4>
+                <p>Jun 20</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <div class="dropdown-content">
+                <li class="del">Delete</li>
+                <li class="ed">Edit</li>
+                <li class="rep">Report</li>
+              </div>
+            </div>
+            <div class="bcontent">
+              <h2>Hi There</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In eos
+                a officiis voluptate omnis aliquam consequuntur ab tenetur
+                aspernatur unde!
+              </p>
+            </div>
+            <div class="btags">
+              <a href="#">#blog</a>
+              <a href="#">#ss</a>
+              <a href="#">#new</a>
+            </div>
+            <div class="breaction">
+              <button class="btn">Like</button>
+              <button class="btn">Comment</button>
+              <input class="bsave" type="checkbox" />
+            </div>
+          </div>
+          <div class="blogblock">
+            <div class="bup">
+              <div class="img">
+                <img src="images/photo-1506794778202-cad84cf45f1d.avif" />
+              </div>
+              <div class="bname">
+                <h4>David Johnson</h4>
+                <p>Jun 20</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <div class="dropdown-content">
+                <li class="del">Delete</li>
+                <li class="ed">Edit</li>
+                <li class="rep">Report</li>
+              </div>
+            </div>
+            <div class="bcontent">
+              <h2>Hi There</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In eos
+                a officiis voluptate omnis aliquam consequuntur ab tenetur
+                aspernatur unde!
+              </p>
+            </div>
+            <div class="btags">
+              <a href="#">#blog</a>
+              <a href="#">#ss</a>
+              <a href="#">#new</a>
+            </div>
+            <div class="breaction">
+              <button class="btn">Like</button>
+              <button class="btn">Comment</button>
+              <input type="checkbox" class="bsave" />
+            </div>
+          </div>
+          <div class="blogblock">
+            <div class="bup">
+              <div class="img">
+                <img src="images/photo-1506794778202-cad84cf45f1d.avif" />
+              </div>
+              <div class="bname">
+                <h4>David Johnson</h4>
+                <p>Jun 20</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <div class="dropdown-content">
+                <li class="del">Delete</li>
+                <li class="ed">Edit</li>
+                <li class="rep">Report</li>
+              </div>
+            </div>
+            <div class="bcontent">
+              <h2>Hi There</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In eos
+                a officiis voluptate omnis aliquam consequuntur ab tenetur
+                aspernatur unde!
+              </p>
+            </div>
+            <div class="btags">
+              <a href="#">#blog</a>
+              <a href="#">#ss</a>
+              <a href="#">#new</a>
+            </div>
+            <div class="breaction">
+              <button class="btn">Like</button>
+              <button class="btn">Comment</button>
+              <input class="bsave" type="checkbox" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rside"></div>
+    </div>
+  </body>
+</html>
